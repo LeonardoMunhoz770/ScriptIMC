@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+  <title>Calcular IMC</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="container_pai">
+    <form>
+      <h1 class="titulo">Cálculo IMC</h1>
+        <div class="campo_dados">
+        Altura (ex.: 1.70) <input type="text" id="campo_altura" placeholder="Metros">
+        Peso (ex.: 69.2) <input type="text" id="campo_peso" placeholder="Quilos">
+        </div><br>
+        <div class="campo_botoes">
+          <button id="calcular" type="button" class="button1"><strong>Calcular </strong>></button>
+          <button id="limpar" type="button" class="button2"><strong>Limpar ></strong></button>
+        </div>
+        <div id="tabela_interpretação"></div><br>
+        <table class="tabela_interpretacao">
+          <h4 class="titulo_tabela">VEJA A INTERPRETAÇÃO DO IMC</h4>
+          <tr class="colunas">
+            <td><strong>IMC</strong></td>
+            <td><strong>CLASSIFICAÇÃO</strong></td>
+            <td><strong>OBESIDADE (Grau)</strong></td>
+          </tr>
+          <tr id="menor_18">
+            <td>MENOR QUE 18,5</td>
+            <td>MAGREZA</td>
+            <td>0</td>
+          </tr>
+          <tr id="menor_25">
+            <td>ENTRE 18,5 E 24,9</td>
+            <td>NORMAL</td>
+            <td>0</td>
+          </tr>
+          <tr id="menor_30">
+            <td>ENTRE 25,0 E 29,9</td>
+            <td>SOBREPESO</td>
+            <td>1</td>
+          </tr>
+          <tr id="menor_40">
+            <td>ENTRE 30,0 E 39,9</td>
+            <td>OBESIDADE</td>
+            <td>2</td>
+          </tr>
+          <tr id="maior_40">
+            <td>MAIOR QUE 40,0</td>
+            <td>OBESIDADE GRAVE</td>
+            <td>3</td>
+          </tr>
+
+        </table>
+
+        <div id="campo_resultado"></div>
+
+    </form>
+  </div>
+</body>
+  <script src="index.js"></script>
+  <script src="jquery.min.js"></script>
+</html>

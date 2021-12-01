@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pessoa><nome>fulano de tal</nome>
+    <matricula>123456</matricula>
+    <cargo>comer cu</cargo>
+    <departamento>
+      <sala>1001</sala><ramal>123456</ramal>
+    </departamento>
+</pessoa>
