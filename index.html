@@ -18,8 +18,8 @@
     <form>
       <h1 class="titulo">Cálculo IMC</h1>
         <div class="campo_dados">
-        Altura (ex.: 1.70) <input type="text" id="campo_altura" placeholder="Metros">
-        Peso (ex.: 69.2) <input type="text" id="campo_peso" placeholder="Quilos">
+        Altura (ex.: 1.70) <input onkeypress='return onlynumber();' type="text" id="campo_altura" placeholder="Metros" class="input_altura">
+        Peso (ex.: 69.2) <input onkeypress='return onlynumber();' type="text" id="campo_peso" placeholder="Quilos" class="input_peso">
         </div><br>
         <div class="campo_botoes">
           <button id="calcular" type="button" class="button1"><strong>Calcular </strong>></button>
@@ -61,7 +61,7 @@
 
         </table>
 
-        <div id="campo_resultado"></div>
+        <div id="campo_resultado" class="resultado">Seu imc: </div>
 
     </form>
   </div>
