@@ -1,4 +1,5 @@
 "use strict";
+
 const calcularIMC = (imc) =>{
   let altura = parseFloat(document.querySelector("#campo_altura").value);
   let peso = parseFloat(document.querySelector("#campo_peso").value);

@@ -1,3 +1,23 @@
+body{
+  background-image: url("images/blog-06-como-calcular-o-imc.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1500px;
+
+}
+
+.container_pai
+{
+    width:34%;
+    margin-left:auto;
+    margin-right:auto;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: lightblue;
+}
+
 .button1{
   font-family: 'Roboto', sans-serif;
   border-radius: 10px;
@@ -30,7 +50,6 @@
   color: white;
 }
 table{
-  text-align: center;
   font-family: 'Roboto', sans-serif;
 }
 tr:first-child{
@@ -48,11 +67,13 @@ tr:first-child{
   font-size: 17px;
 }
 .tabela_selecao{
-  background-color: rgb(183, 207, 250);
+  background-color: blue;
   border: black;
+  color: white;
 }
 .titulo{
   font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
 .resultado{
@@ -78,4 +99,15 @@ tr:first-child{
   height: 30px;
   border: 1px solid rgb(31, 94, 175);
   border-radius: 15px;
+}
+
+tr{
+  color: black;
+
+}
+tr,td,table{
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  
 }
